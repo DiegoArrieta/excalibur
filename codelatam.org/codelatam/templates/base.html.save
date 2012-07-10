@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8"/>
+	<title>{%block title %} {% endblock %}</title>
+	<link rel="stylesheet" type="text/css" href="/media/css/style.css" media="screen"/>
+</head>
+<body>
+	<header>
+		<h1>Bienvenidos a Codelatam!!!</h1>
+		<p>Un sitio donde aprender a programar es mas divertido!!</p>
+		<div id="menu_principal">
+		<nav>
+			<ul>
+			<li><a href="#">Inicio</a></li>
+			<li><a href="#">Nosotros</a></li>
+			<li><a href="#">Contacto</a></li>
+			<li><a href="#">Blog</a></li>
+			<ul>
+		</nav>
+		</div>
+	</header>
+<section>
+{% block content %}
+{% endblock %}
+</section>
+<aside>
+	<h3>Login</h3>
+	<p>Ingresa con tu usuario y  password</p>
+	<p>No tienes cuenta?, Registrat<a href="#"e >aqui</a>
+</aside>
+<footer>
+	<p>Derechos Reservados</p>
+	<p>Contactenos en<a href="mailto:info@codelatam.org"> info@codelatam.org </a></p>
+	
+</body>
+</html>
+

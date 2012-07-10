@@ -1,0 +1,10 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+	font-size:14px;
+	color:#F7F8E0;
+	background:#084B8A no-repeat;
+	font-family:Arial,Helvetica,sans-serif;
+}
