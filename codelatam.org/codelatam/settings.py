@@ -1,10 +1,8 @@
 # Django settings for codelatam project.
 
-
 """ Import os
 Modificado: Alex Dzul 10/07/2012
 Motivo: Para el dinamismo entre sistemas operativos
-linea: 9
 """
 import os
 
@@ -54,8 +52,7 @@ USE_L10N = True
 
 """ MEDIA_ROOT Multiplataforma
 Modificacion: Alex Dzul 10/07/2012
-Motivo: Se cambia esta linea para que funcione dinamicamente en cualquier sistema operativo 
-Linea: 62
+Motivo: Se cambia esta linea para que funcione dinamicamente en cualquier sistema operativo
 """
 
 MEDIA_ROOT = os.path.join('../public/','media/')
