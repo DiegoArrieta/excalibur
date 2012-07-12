@@ -5,6 +5,7 @@ Modificado: Alex Dzul 10/07/2012
 Motivo: Para el dinamismo entre sistemas operativos
 """
 import os
+
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 # Esta linea de codigo se cambia cuando se trabaja localmente
@@ -16,8 +17,8 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
-# Se realiza para ser multi plataforma y trabajar remotamente y localmente
-if IS_REMOTO: # Si el proyecto es remoto entonces
+#Se realiza para ser multi plataforma y trabajar remotamente y localmente
+if IS_REMOTO: # Si el proyecto es remoto entonces se utiliza para codelatam.org
 	DATABASES = {
 		'default': {
 			'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
