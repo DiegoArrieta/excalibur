@@ -1,53 +1,32 @@
-*{
-	margin:0;
-	paddig:0;
+/*!
+ * CodeLatam
+ *
+ *
+ * Archivos Propios de CodeLatam.org
+ *
+ */
+ 
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
 }
-
-body{
-	height:600px;
-	margin:0 auto;
-	width:900px;
-}
-
-nav{
-	margin:0 auto;
-	background-image: -webkit-gradient(linear,left top,left bottom, from(#FFF),to(#CCC)); /*Para chrome y safari*/
-	background-image: -moz-linear-gradient(top,center,#FFF,#CCC); /* Para Firefox */
-	background-image: -o-linear-gradient(top,#FFF,#CCC); /* Estandard */
-	display: block;
-	overflow:hidden;
-	width:100%;
-}
-
-nav ul{
-	list-style:none;
-	margin:0 10px 0 10px;
-	padding:0;
-}
-
-nav ul li{
-	float:left;
-	font-family:Arial,Helvetica, sans-serif;
-	font-size:10 px;
-	font-weight: bold;
-	margin-right:10px;
-	text-align:center;
-	text-shadow: 0px 1px 0px #FFF;
-}
-
-nav ul li a{
-	color:#999;
-	display:block;
-	padding:10px;
-	text-decoration:none;
+.sidebar-nav {
 	
 }
-
-nav ul li a:hover{
-	color: #000;
+footer {
+	background-color:#272727;
+	font-size:13px;		
+	padding:15px 10px 20px 40px;
+	border:1px solid #28170d;
+	border-bottom:0;
+	color: #ffffff;
 }
-
-aside{
-	float:right;
-	width:30%;
+.foot-span1{
+	color:#2ca9e4;
+}
+footer .h3{
+	margin: 0;
+	padding: 5px;
+	font-weight: normal;
+	font-size:18px;
 }

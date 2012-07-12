@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Bootstrap, from Twitter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="CodeLatam">
+
+    <!-- styles -->
+    <link href="/media/css/bootstrap.css" rel="stylesheet">
+	<link href="/media/css/style.css" rel="stylesheet">
+    <link href="/media/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+	  <header class="navbar">
+		<!-- Inicio Barra  Navegacion -->
+			  <div class="navbar-inner">
+			  <div class="container">
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				  <span class="icon-bar"></span>
+				  <span class="icon-bar"></span>
+				  <span class="icon-bar"></span>
+				</a>
+				<a class="brand" href="#">Project name</a>
+				<div class="nav-collapse">
+				  <ul class="nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+					<li class="dropdown">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+					  <ul class="dropdown-menu">
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+						<li class="divider"></li>
+						<li class="nav-header">Nav header</li>
+						<li><a href="#">Separated link</a></li>
+						<li><a href="#">One more separated link</a></li>
+					  </ul>
+					</li>
+				  </ul>
+				  <div class="nav pull-right">
+					  <form class="navbar-search pull-left" action="">
+						<input type="text" class="search-query span2" placeholder="Search">
+					  </form>
+				  </div>
+				</div>
+			  </div>
+			  </div>
+			 <!-- FIN Barra  Navegacion -->
+	  </header>
+
+	
+	
+    <div class="container-fluid">
+	
+      <div class="row-fluid">
+
+		
+        <div class="span9">
+		
+		
+          <div id="myCarousel" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="/media/images/slide/1.jpg" alt="">
+                <div class="carousel-caption">
+                  <h4>Aprende Python + Django con CodeLatam</h4>
+                </div>
+              </div>
+              <div class="item">
+                <img src="/media/images/slide/2.jpg" alt="">
+                <div class="carousel-caption">
+                  <h4>Aprende PHP + CodeIngniter con CodeLatam</h4>
+                 </div>
+              </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+          </div>
+		  
+		  
+		  
+          <div class="row-fluid">
+            <div class="span4">
+              <h2>Heading</h2>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+              <p><a class="btn" href="#">View details &raquo;</a></p>
+            </div><!--/span-->
+            <div class="span4">
+              <h2>Heading</h2>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+              <p><a class="btn" href="#">View details &raquo;</a></p>
+            </div><!--/span-->
+            <div class="span4">
+              <h2>Heading</h2>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+              <p><a class="btn" href="#">View details &raquo;</a></p>
+            </div><!--/span-->
+          </div><!--/row-->
+        </div><!--/span-->
+		
+	
+		
+		<!-- INICIO Side Bar -->
+        <aside class="span3">
+			<section>
+				<div>
+					<form class="well form-inline">
+						<label>
+							<input type="text" class="input-small" placeholder="Usuario">
+						</label>
+						<input type="password" class="input-small" placeholder="Password">
+						<label class="checkbox">
+							<input type="checkbox"> Recordarme 
+						</label>
+							<label style='margin-left: 15px;'>
+							<button type="submit" class="btn btn-inverse">Entrar</button>
+						</label>
+						<label>
+							<a href='#'  rel="popover" title="A Title" data-content="And here's some amazing content. It's very engaging. right?">
+								Recordar Contrasena
+							</a>
+							
+							<a href="#myModal" data-toggle="modal">
+								Registrarme
+							</a>
+						</label>
+					</form>
+				</div>
+			</section>
+		
+			<section>
+			  <div class="well sidebar-nav">
+				<ul class="nav nav-list">
+				  <li class="nav-header">Server Side</li>
+				  <li><a href="#">Python</a></li>
+				  <li><a href="#">Python + Django</a></li>
+				  <li><a href="#">PHP + CodeIgniter</a></li>
+				  <li class="nav-header">User Side</li>
+				  <li><a href="#">JQuery</a></li>
+				  <li><a href="#">HTML5</a></li>
+				  <li><a href="#">CSS3</a></li>
+				</ul>
+			  </div>
+			</section>
+		  
+        </aside>
+		<!-- Fin Side Bar -->
+		
+		
+      </div><!--/row-->
+
+      <hr>
+
+		
+		<footer>
+		   <div class="row show-grid">
+				<div class="span3">
+					<h3>Nosotros</h3>
+					<span style='color:#2ca9e4;'>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </span>
+				</div>
+				<div class="span3">
+					<h3>Dolor Sit aMeT</h3>
+					<ul>
+						<li>Proyectos</li>
+						<li>Donaciones</li>
+						<li>Staff</li>
+						<li>Ipsum</li>
+					</ul>
+				</div>
+				<div class="span3">
+					<h3>We Are Social's</h3>
+					<ul>
+						<li>@Twitter</li>
+						<li>FAcebook</li>
+						<li>G+</li>
+					</ul>
+				</div>
+				<div class="span3">
+					<h3>Follow Us</h3>
+				</div>
+			</div>
+		</footer>
+
+    </div><!--/.fluid-container-->
+
+
+
+    <!-- JS utilizados -->
+	<script src="/media/js/jquery-1.7.2.js"></script>
+	<script src="/media/js/bootstrap.js"></script>
+	<script src="/media/js/bootstrap.min.js"></script>
+	<script src="/media/js/bootstrap-carousel.js"></script>
+	<script src="/media/js/bootstrap-dropdown.js"></script>
+	<script src="/media/js/bootstrap-popover.js"></script>
+	<script src="/media/js/bootstrap-typeahead.js"></script>
+	<script src="/media/js/bootstrap-tooltip.js"></script>
+	<script src="/media/js/bootstrap-alert.js"></script>
+	<script>
+	$(function(){$("a[rel=popover]")
+		  .popover({
+			  offset: 5,
+			  placement: 'top'
+		  });
+	   });
+
+	</script>
+  </body>
+</html>
