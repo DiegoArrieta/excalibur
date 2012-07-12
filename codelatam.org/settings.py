@@ -1,15 +1,11 @@
 # Django settings for codelatam project.
 
-""" Import os
-Modificado: Alex Dzul 10/07/2012
-Motivo: Para el dinamismo entre sistemas operativos
-"""
+
+#Agregado por Alex Dzul
 import os
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
-# Esta linea de codigo se cambia cuando se trabaja localmente
-IS_REMOTO = False
 
 ADMINS = (
     # ('Your Name', 'your_email@domain.com'),
@@ -17,29 +13,16 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
-# Se realiza para ser multi plataforma y trabajar remotamente y localmente
-if IS_REMOTO: # Si el proyecto es remoto entonces
-	DATABASES = {
-		'default': {
-			'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-			'NAME': 'codelatam_bd',                      # Or path to database file if using sqlite3.
-			'USER': 'alexdzul',                      # Not used with sqlite3.
-			'PASSWORD': 'alex2012',                  # Not used with sqlite3.
-			'HOST': 'bd.codelatam.org',                      # Set to empty string for localhost. Not used with sqlite3.
-			'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
-		}
-	}
-else: # De lo contrario si es local entonces se utiliza la siguiente configuracion
-	DATABASES = {
-			'default': {
-				'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-				'NAME': 'codelatam_bd',                      # Or path to database file if using sqlite3.
-				'USER': 'root',                      # Not used with sqlite3.
-				'PASSWORD': 'root',                  # Not used with sqlite3.
-				'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
-				'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
-			}
-		}
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': 'codelatam_bd',                      # Or path to database file if using sqlite3.
+        'USER': 'alexdzul',                      # Not used with sqlite3.
+        'PASSWORD': 'alex2012',                  # Not used with sqlite3.
+        'HOST': 'bd.codelatam.org',                      # Set to empty string for localhost. Not used with sqlite3.
+        'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
+    }
+}
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -64,12 +47,10 @@ USE_I18N = True
 # calendars according to the current locale
 USE_L10N = True
 
-""" MEDIA_ROOT Multiplataforma
-Modificacion: Alex Dzul 10/07/2012
-Motivo: Se cambia esta linea para que funcione dinamicamente en cualquier sistema operativo
-"""
-
-MEDIA_ROOT = os.path.join('../public/','media/')
+# Absolute path to the directory that holds media.
+# Example: "/home/media/media.lawrence.com/"
+MEDIA_ROOT = '/home/alexdzul/codelatam.org/public/media'
+#MEDIA_ROOT = os.path.join(os.path.dirname(__file__),'media/'))
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash if there is a path component (optional in other cases).
@@ -102,7 +83,10 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'codelatam.urls'
 
 TEMPLATE_DIRS = (
-    os.path.join(os.path.dirname(__file__),'templates'),
+    os.path.join(os.path.dirname(__file__),'templates'),    
+    # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
+    # Always use forward slashes, even on Windows.
+    # Don't forget to use absolute paths, not relative paths.
 )
 
 INSTALLED_APPS = (
