@@ -110,5 +110,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.sites',
     'django.contrib.messages',
+	# Inician las aplicaciones de CodeLatam
     'codelatam.apps.home',
+	'codelatam.apps.security',
 )
