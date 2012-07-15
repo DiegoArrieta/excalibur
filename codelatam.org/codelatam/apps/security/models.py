@@ -11,10 +11,10 @@ GENDER_CHOICE=(
 )
 
 COUNTRY_CHOICE = (
-	('Mexico'),
-	('Chile'),
-	('Argentina'),
-	('Peru'),
+	('Mexico','Mexico'),
+	('Chile','Chile'),
+	('Argentina','Argentina'),
+	('Peru','Peru'),
 )
 
 
@@ -46,7 +46,7 @@ class userProfile(models.Model):
 	aboutMe 			= models.TextField(max_length="500",help_text="Escribe informacion que quieras que conozcan de ti")
 	birthDay 			= models.DateField(null=True,blank=True)
 	gender 				= models.CharField(max_length=1,choices=GENDER_CHOICE,help_text="Hombre o Mujer")
-	gender 				= models.CharField(max_length=500,choices=GENDER_CHOICE,help_text="Elige tu Pais")
+	country 			= models.CharField(max_length=500,choices=COUNTRY_CHOICE,help_text="Elige tu Pais")
 	activationKey   	= models.CharField(max_length=200,null=True,blank=True)
 	keyExpires  		= models.DateTimeField(null=True,blank=True)
 	image 				= models.ImageField(upload_to=image_path,null=True,blank=True)

@@ -6,27 +6,70 @@
  *
  */
  
+ 
+ /* Body */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,800&subset=latin,latin-ext);
 body {
 	padding-top: 60px;
 	padding-bottom: 40px;
 }
-.sidebar-nav {
-	
-}
+
+
+/* Footer */
 footer {
 	background-color:#272727;
 	font-size:13px;		
-	padding:15px 10px 20px 40px;
+	padding:40px 10px 20px 40px;
 	border:1px solid #28170d;
 	border-bottom:0;
-	color: #ffffff;
 }
 .foot-span1{
-	color:#2ca9e4;
+	color:#949494;
 }
-footer .h3{
+.h3-footer{
+	color: #fff;
 	margin: 0;
 	padding: 5px;
-	font-weight: normal;
+	font-weight: bold;
 	font-size:18px;
+}
+footer a{
+	color: #ffffff;
+}
+.fofooter {
+	background-color:#00000;
+	font-size: 9px;
+	margin-top: 1px;
+	color: #fff;
+}
+
+/* header */ 
+header{
+	margin-bottom: 75px;
+	margin-top: -57px;
+}
+header #logo{
+	height:111px;
+	text-indent:-999999px;
+	float:left;
+}
+header #logo a{
+	display:block;
+	background:url(../images/logo.jpg) no-repeat bottom;
+	text-indent:-999999px;
+	float:left;
+	padding-bottom: 30px;
+}
+/* Extras */
+
+#color{
+	background:#2ca9e4;
+	width:100%;
+	height:4px;
+	float:left;
+	margin:0;
+	padding:0;
+} 
+.spacer{ 
+		margin-top: 50px;
 }
