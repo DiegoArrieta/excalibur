@@ -52,4 +52,4 @@ class userProfile(models.Model):
 	image 				= models.ImageField(upload_to=image_path,null=True,blank=True)
 
 	def __unicode__(self):
-		return self.user
+		return unicode(self.user)
