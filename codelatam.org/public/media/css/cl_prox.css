@@ -1,0 +1,250 @@
+
+
+header{
+  text-align: center;
+  background:  #000;
+}
+
+
+ul{
+  text-align: left;
+  color: #fff;
+  font-size: 20px
+}
+
+h1 {
+  margin-top: 50px;
+  margin-left: 50px;
+  padding:0px;
+  display: inline-block;
+  font-family: 'Ruda', sans-serif;
+  font-size: 70px;
+  line-height: 45px;
+  color: #fff;
+
+}
+
+h2{
+  margin-top: 50px;
+  margin-left: 50px;
+  padding:0px;
+  font-size: 32px;
+  font-family: 'Ruda', sans-serif;
+  background: rgba(225, 225, 225, 0.30);
+  display: inline;
+  line-height: 28px;
+  color: #fff;
+  text-align: right;
+  text-transform: none;
+}
+
+h3{
+  margin-bottom: 10px;
+  padding:0px;
+  font-size: 40px;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+}
+
+p{
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-size: 25px;
+  background: rgba(225, 225, 225, 0.30);
+  display: inline;
+}
+
+span{
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
+  font-size: 20px;
+}
+body{
+  background-color: #dadada;
+  font-size: 15px;
+  font-family: 'Ruda', sans-serif;
+}
+
+footer{
+  margin: 18px;
+  margin-left: 8%;
+}
+
+aside{
+  margin: 30px;
+  width: 90%;
+  display: inline-block;
+}
+
+
+#logo {
+  margin: 20px;
+  margin-left: 50px;
+  text-align: center;
+  margin-top: -10px;
+}
+
+#titulo {
+  text-align: center;
+  background:  #000;
+  width: 100%;
+  display: inline-block;
+}
+
+.powerby{
+  display: inline;
+  margin-top: 80px;
+}
+
+.background {
+  position: absolute;
+  bottom:  -60px;
+  left: 0;
+  width: 100%;
+  height:  190px;
+  background: url(../images/blocks.png) repeat-x center bottom;
+}
+
+#warp{
+  background:  #000 url(../images/background.jpg) no-repeat center center;
+  position: relative;
+  height:  380px;
+  width: 100%;
+  margin-top: 0px;
+}
+
+
+#warp section{
+  width: 30%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#articulo{
+  text-align: right;
+  margin-top: -10px;
+
+}
+
+#newsletter{
+  display: inline-block;
+  margin-top: 20px;
+}
+
+#share{
+  display: inline-block;
+  margin-left: 150px;
+  margin-top: 15px;
+}
+
+
+#seccion_follow {
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 35px;
+  color: #fff;
+  margin-top: -75px;
+}
+
+/*
+#seccion_follow #uno{
+  background-image: url(../img/twitter-box1.png);
+  background-repeat: no-repeat;
+  width: 313px;
+  height: 61px;
+}
+
+
+#seccion_follow #dos{
+  background-image: url(../img/twitter-box2.png);
+  background-repeat: no-repeat;
+  width: 313px;
+  height: 61px;
+}
+
+#seccion_follow #tres{
+  background-image: url(../img/twitter-box3.png);
+  background-repeat: no-repeat;
+  width: 313px;
+  height: 59px;  
+}
+
+#seccion_follow #cuatro{
+  background-image: url(../img/twitter-box4.png);
+  background-repeat: no-repeat;
+  width: 313px;
+  height: 59px;  
+}
+*/
+
+
+#tecnologias #uno{
+  background-image: url(../images/logohtml5.png);
+  background-repeat: no-repeat;
+  width: 202px;
+  height: 125px;
+  display: inline-block;
+}
+
+#tecnologias #dos{
+  background-image: url(../images/logojquery.png);
+  background-repeat: no-repeat;
+  width: 339px;
+  height: 125px;
+  display: inline-block;
+}
+
+#tecnologias #tres{
+  background-image: url(../images/logopython.png);
+  background-repeat: no-repeat;
+  width: 348px;
+  height: 125px;
+  display: inline-block;
+}
+
+#tecnologias #cuatro{
+  background-image: url(../images/logophp.png);
+  background-repeat: no-repeat;
+  width: 191px;
+  height: 123px;
+  display: inline-block;
+}
+
+.box_form {
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+  color: #ffffff;
+  background: #2c81b2;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+    /* box-shadow */
+  -webkit-box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
+  -moz-box-shadow: rgba(250,0,0.2) 0px 1px 3px;
+  box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
+}
+
+.follow {
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+  color: #ffffff;
+  background: #2c81b2;
+  padding: 20px;
+  text-align: left;
+    /* box-shadow */
+  -webkit-box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
+  -moz-box-shadow: rgba(250,0,0.2) 0px 1px 3px;
+  box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
+  margin: 5px;
+  /* min-width: 310px; */
+  /* max-width: 380px; */
+}
+
+@-moz-document domain(google.com) {
+ a:visited {
+  color:#ffffff !important;
+  background-color:#ffffff;
+ }
+}
