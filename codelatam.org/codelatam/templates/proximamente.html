@@ -68,15 +68,16 @@
     <section id="newsletter">
       <span>Obten noticias a tu correo electronico del proximo lanzamiento:</span>
       <div class="box_form">
-          <form action="">
-            
-            
+          <form action="." method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+          <!--
           <td>Nombre:</td>
           <td><input type="text" name="name" autofocus="autofocus" required="required" /></td>
           <td>Correo:</td>
           <td><input type="email" formnovalidate="formnovalidate" required="required"/></td>
+          -->
           <input type="submit" value="Enviar" />
-          
       </form>
       </div>
         </section>

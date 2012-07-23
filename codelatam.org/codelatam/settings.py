@@ -114,3 +114,10 @@ INSTALLED_APPS = (
     'codelatam.apps.home',
 	'codelatam.apps.security',
 )
+
+# Configuracion del Correo de CodeLatam
+EMAIL_HOST = 'mail.codelatam.org'
+EMAIL_PORT = 25
+EMAIL_HOST_USER = 'hola@codelatam.org'
+EMAIL_HOST_PASSWORD = '*****'
+EMAIL_USE_TLS = True

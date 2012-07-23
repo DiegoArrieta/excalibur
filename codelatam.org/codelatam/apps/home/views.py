@@ -1,9 +1,28 @@
 from django.shortcuts import render_to_response
 from django.template import RequestContext
+from codelatam.apps.home.forms import sendInformationFORM
+from codelatam import settings
+from django.core.mail import EmailMultiAlternatives
 
 
 def proximamente_view(request):
-	return render_to_response('proximamente.html',context_instance=RequestContext(request))
+    if request.POST:
+        form = sendInformationFORM(request.POST) # Creamos un formulario con la informacion enviada de POST
+        if form.is_valid(): # Si la informacion es valida entonces
+            # Enviamos el correo
+            nombre = form.cleaned_data['nombre']
+            email = form.cleaned_data['email']
+            subject = 'Hola Coder!'
+            from_email = 'hola@codelatam.org'
+            to = email
+            text_content = ''
+            html_content = 'Gracias %s por tu interes por formar parte de esta nueva comunidad hispana para programadores </br> Te mantendremos informado de nuestra fecha de Lanzamiento'%(nombre)
+            msg = EmailMultiAlternatives(subject, text_content, from_email, [to])
+            msg.attach_alternative(html_content, "text/html")
+            msg.send()
+    form = sendInformationFORM() # Creamos un nuevo form
+    ctx = {'form':form}
+    return render_to_response('proximamente.html',ctx,context_instance=RequestContext(request))
 
 def index_view(request):
 	return render_to_response('home/index1.html',context_instance=RequestContext(request))
