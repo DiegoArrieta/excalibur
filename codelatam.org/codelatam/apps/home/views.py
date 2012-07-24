@@ -3,15 +3,21 @@ from django.template import RequestContext
 from codelatam.apps.home.forms import sendInformationFORM
 from codelatam import settings
 from django.core.mail import EmailMultiAlternatives
-
+from codelatam.apps.home.models import userWaiting
 
 def proximamente_view(request):
     if request.POST:
         form = sendInformationFORM(request.POST) # Creamos un formulario con la informacion enviada de POST
         if form.is_valid(): # Si la informacion es valida entonces
-            # Enviamos el correo
+            # Guardamos el usuario que quiere mantenerse informado
             nombre = form.cleaned_data['nombre']
             email = form.cleaned_data['email']
+            u = userWaiting # Creamos una nueva instancia
+            u.nombre = nombre
+            u.email = email
+            u.status = True
+            u.save() # Guardamos la informacion del usuario
+            # Enviamos el correo
             subject = 'Hola Coder!'
             from_email = 'hola@codelatam.org'
             to = email

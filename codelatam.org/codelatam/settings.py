@@ -119,5 +119,5 @@ INSTALLED_APPS = (
 EMAIL_HOST = 'mail.codelatam.org'
 EMAIL_PORT = 25
 EMAIL_HOST_USER = 'hola@codelatam.org'
-EMAIL_HOST_PASSWORD = '*****'
+EMAIL_HOST_PASSWORD = 'comunidad2012'
 EMAIL_USE_TLS = True
