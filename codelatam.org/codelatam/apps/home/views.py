@@ -12,7 +12,7 @@ def proximamente_view(request):
             # Guardamos el usuario que quiere mantenerse informado
             nombre = form.cleaned_data['nombre']
             email = form.cleaned_data['email']
-            u = userWaiting # Creamos una nueva instancia
+            u = userWaiting() # Creamos una nueva instancia
             u.nombre = nombre
             u.email = email
             u.status = True
