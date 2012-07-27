@@ -4,6 +4,10 @@ from codelatam.apps.home.forms import sendInformationFORM
 from codelatam import settings
 from django.core.mail import EmailMultiAlternatives
 from codelatam.apps.home.models import userWaiting
+from django.contrib.auth.decorators import login_required
+from django.template.loader import render_to_string
+from django.utils.html import strip_tags
+charset='utf-8'
 
 def proximamente_view(request):
     if request.POST:
@@ -22,14 +26,21 @@ def proximamente_view(request):
             from_email = 'hola@codelatam.org'
             to = email
             text_content = ''
-            html_content = 'Gracias %s por tu interes por formar parte de esta nueva comunidad hispana para programadores </br> Te mantendremos informado de nuestra fecha de Lanzamiento'%(nombre)
+            html_content = render_to_string('mail.html', {'nombre':'nombre'}) # ...
+            text_content = strip_tags(html_content) 
+
+ 
+
             msg = EmailMultiAlternatives(subject, text_content, from_email, [to])
             msg.attach_alternative(html_content, "text/html")
             msg.send()
     form = sendInformationFORM() # Creamos un nuevo form
     ctx = {'form':form}
     return render_to_response('proximamente.html',ctx,context_instance=RequestContext(request))
-
+"""
+Se restringe el acceso solo a los usuarios registrados
+@DiegoArrieta
+"""
+@login_required(login_url='/admin')
 def index_view(request):
-	return render_to_response('home/index1.html',context_instance=RequestContext(request))
-
+    return render_to_response('home/index1.html',context_instance=RequestContext(request))
